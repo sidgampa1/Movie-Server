@@ -1,7 +1,7 @@
 import dotenv from "dotenv"
-import app from "../server/api/server.js"
+import app from "./api/server.js"
 import { MongoClient, ServerApiVersion } from 'mongodb'
-import reviewsDAO from "../server/dao/ReviewsDAO.js"
+import reviewsDAO from "./dao/ReviewsDAO.js"
 
 dotenv.config();
 const mongo_username = process.env.MONGO_USERNAME;
